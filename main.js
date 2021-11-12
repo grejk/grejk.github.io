@@ -26,7 +26,6 @@ data.forEach(c => {
         c = c.split(";")
         c[5] = c[5].replace("NULL", "Dresseur")
         c[6] = quality[c[6]]
-        console.log(c);
         c.push(c[0].split("/")[4].split(".")[0]) //extract picture name to use it as ID
         ext = c[0].split("/")[1] + "_" + c[0].split("/")[2]
         if (ext in extensions) {
