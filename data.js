@@ -192,6 +192,15 @@ cartes/Diamant & Perle/Éveil des Légendes/merged/IMG_20211030_171917.png;136;1
 cartes/Diamant & Perle/Éveil des Légendes/merged/IMG_20211030_171928.png;137;146;Machine Technique TS-2;peu commune;Dresseur;4;0.1
 cartes/Diamant & Perle/Éveil des Légendes/merged/IMG_20211030_171940.png;137;146;Machine Technique TS-2;peu commune;Dresseur;4;0.1
 cartes/Diamant & Perle/Éveil des Légendes/merged/IMG_20211030_171955.png;139;146;Fossile racine;commune;Dresseur;4;0.1
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185727.png;25;203;akwakwak;peu commune;Eau;1;0.35
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185736.png;32;203;nénupiot;commune;Eau;1;0.25
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185746.png;39;203;lovdisc;commune;Eau;1;0.25
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185757.png;76;203;pitrouille;commune;psy;1;0.25
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185806.png;78;203;Bombydou;commune;Psy;1;0.25
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185815.png;107;203;draby;commune;Dragon;1;0.25
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185823.png;114;203;diamat;peu commune;Dragon;1;0.35
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185833.png;129;203;Parecool;commune;Métal;1;0.25
+cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185843.png;137;203;gueriaigle;peu commune;Métal;1;0.35
 cartes/EX/Créateurs de légendes/merged/20211030_202525.png;64;92;Skitty;commune;Incolore;5;0.05
 cartes/EX/Créateurs de légendes/merged/20211030_202532.png;73;92;Travailleur de terrain;peu commune;Dresseur;2;0.4
 cartes/EX/Créateurs de légendes/merged/20211030_202541.png;78;92;Fossile griffe;commune;Dresseur;3;0.15
@@ -389,7 +398,6 @@ cartes/Noir & Blanc/Frontières Franchies/merged/20211030_200008.png;128;149;Rec
 cartes/Noir & Blanc/Frontières Franchies/merged/20211030_200017.png;132;149;Potion;commune;Dresseur;1;0.25
 cartes/Noir & Blanc/Frontières Franchies/merged/20211030_200027.png;132;149;Potion;commune;Dresseur;2;0.2
 cartes/Noir & Blanc/Frontières Franchies/merged/20211030_200038.png;135;149;Échange;commune;Dresseur;2;0.2
-cartes/Noir & Blanc/Glaciation Plasma/merged/20211030_185914.png;69;116;Escroco;peu commune;Obscurité;;
 cartes/Noir & Blanc/Glaciation Plasma/merged/20211030_185932.png;1;116;Aspicot;commune;Plante;3;0.15
 cartes/Noir & Blanc/Glaciation Plasma/merged/20211030_185942.png;103;116;Récupération d'Énergie Supérieure;peu commune;Dresseur;4;0.1
 cartes/Noir & Blanc/Nobles Victoires/merged/20211030_190152.png;19;101;Pyronille;commune;Feu;4;0.1
@@ -462,7 +470,6 @@ cartes/Noir & Blanc/Noir & Blanc/merged/20211030_201014.png;99;114;Communication
 cartes/Noir & Blanc/Noir & Blanc/merged/20211030_201022.png;99;114;Communication Pokémon;peu commune;Dresseur;2;0.3
 cartes/Noir & Blanc/Noir & Blanc/merged/20211030_201031.png;99;114;Communication Pokémon;peu commune;Dresseur;3;0.25
 cartes/Noir & Blanc/Noir & Blanc/merged/20211030_201041.png;104;114;Échange;commune;Dresseur;4;0.1
-cartes/Noir & Blanc/Pouvoirs Émergents/merged/20211030_190000.png;87;98;Furaiglon;commune;Incolore;;
 cartes/Noir & Blanc/Pouvoirs Émergents/merged/20211030_190015.png;10;98;Doudouvet;commune;Plante;1;0.25
 cartes/Noir & Blanc/Pouvoirs Émergents/merged/20211030_190025.png;26;98;Couaneton;commune;Eau;1;0.25
 cartes/Noir & Blanc/Pouvoirs Émergents/merged/20211030_190036.png;34;98;Mygavolt;peu commune;Électrique;3;0.25
@@ -492,7 +499,6 @@ cartes/Soleil et Lune/Gardiens Ascendants/merged/20211030_184354.png;88;145;Mél
 cartes/Soleil et Lune/Gardiens Ascendants/merged/20211030_184404.png;98;145;Bébécaille;commune;Dragon;1;0.25
 cartes/Soleil et Lune/Gardiens Ascendants/merged/20211030_184412.png;105;145;Morphéo;commune;Incolore;1;0.25
 cartes/Soleil et Lune/Gardiens Ascendants/merged/20211030_184421.png;110;145;Braisillon;peu commune;Incolore;2;0.3
-cartes/Soleil et Lune/Ultra prisme/merged/20211030_184116.png;56;156;Cradopaud;commune;Psy;3;0.15
 cartes/Soleil et Lune/Invasion Carmin/merged/20211030_184135.png;13;111;Chamallot;commune;Feu;3;0.15
 cartes/Soleil et Lune/Invasion Carmin/merged/20211030_184144.png;43;111;Éoko;commune;Psy;2;0.2
 cartes/Soleil et Lune/Invasion Carmin/merged/20211030_184154.png;46;111;Tritox;commune;Psy;2;0.2
@@ -621,14 +627,4 @@ cartes/XY/Poings Furieux/merged/IMG_20211030_171235.png;93;111;Total Soin;peu co
 cartes/XY/Poings Furieux/merged/IMG_20211030_171245.png;96;111;Entretien;peu commune;Dresseur;1;0.35
 cartes/XY/Poings Furieux/merged/IMG_20211030_171255.png;97;111;Ring en Montagne;peu commune;Dresseur;2;0.3
 cartes/XY/Poings Furieux/merged/IMG_20211030_171303.png;98;111;Fossile Nageoire;peu commune;Dresseur;1;0.35
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185727.png;25;203;akwakwak;peu commune;Eau;1;0.35
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185736.png;32;203;nénupiot;commune;Eau;1;0.25
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185746.png;39;203;lovdisc;commune;Eau;1;0.25
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185757.png;76;203;pitrouille;commune;psy;1;0.25
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185806.png;78;203;Bombydou;commune;Psy;1;0.25
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185815.png;107;203;draby;commune;Dragon;1;0.25
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185823.png;114;203;diamat;peu commune;Dragon;1;0.35
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185833.png;129;203;Parecool;commune;Métal;1;0.25
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185843.png;137;203;gueriaigle;peu commune;Métal;1;0.35
-cartes/Épée et Bouclier/Evolution Céleste/merged/20211030_185852.png;159;203;badge feuille neige;peu commune;Dresseur;1;0.35
 `
