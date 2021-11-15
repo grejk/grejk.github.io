@@ -4,8 +4,8 @@
 } */
 
 .img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 1000px;
+    max-height: 1000px;
     display: inline-block;
 }
 
@@ -79,7 +79,10 @@ body {
 
 .card-footer {
     text-transform: capitalize;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
 #filters {
