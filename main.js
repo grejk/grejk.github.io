@@ -136,7 +136,7 @@ function html_cart(card) {
                 data-extension="${card[0].split("/")[1]+"_"+card[0].split("/")[2]}"
                 id="cart-${card[8]}">⛔
             </button>
-            <span>${card[0].split("/")[1]+" "+card[0].split("/")[2]}</span>
+            <span>${card[0].split("/")[1]+" "+card[0].split("/")[2]}</span> - 
             <span>#${card[1]}/${card[2]}</span> -
             <span>${card[3]}</span> -
             <span>${card[4]}</span> -
@@ -244,10 +244,11 @@ $("#extensions").on("change", function name(e) {
     $("#nav-cards-tab").click() //display "cartes" tab
     $("#cards").html("")
     if ($("#extensions").val() == 0) {
+        card_list_count()
         return //for "selectionnez une extension" case
     }
     $("#cards").hide()
-    $("#cards").removeClass("d-flex") //if not removed the .hide() doesn't work
+    // $("#cards").removeClass("d-flex") //if not removed the .hide() doesn't work
     $("#loader").show()
 
     $("input").prop("checked", true)
@@ -265,6 +266,8 @@ $("#extensions").on("change", function name(e) {
         "peu commune": 0,
         "rare": 0,
     }
+    i=0
+    $("#cards").append(`<div class="d-flex flex-row flex-wrap justify-content-between part"></div>`)
     extensions[$("#extensions").val()].forEach(a => {
         //create and append card tag
         quality_count[a[6]]++
@@ -272,7 +275,7 @@ $("#extensions").on("change", function name(e) {
         html = `
              <div class="card rarity-${a[4].replace(" ","-")} quality-${a[6].replace(" ","-")}" id="${a[1]}_${a[2]}_${a[3]}">
                  <div class="card-header">
-                    <span class="number">#️${a[1]}/${a[2]}</span> -
+                    <span class="number">#${a[1]}/${a[2]}</span> -
                     <span class="name">${a[3]}</span> -
                     <span class="rarity">${get_html_rarity(a[4])}</span> 
                  </div>
@@ -281,7 +284,7 @@ $("#extensions").on("change", function name(e) {
                  <img src="${a[0]}" class="card-img-top" alt="...">
                  <small>Cliquez sur la carte pour l'agrandir</small>
                  </div>
-                 ${cart_transfer_button(a)}
+                    ${cart_transfer_button(a)}
                  </div>
                  <div class="card-footer text-muted">
                  <span class="type_${a[5]}">${a[5]}</span> - 
@@ -289,8 +292,12 @@ $("#extensions").on("change", function name(e) {
                  <span>${a[7]}€</span>
                  </div>
              </div>`
-
-        $("#cards").append(html)
+        if (i==9) {
+            $("#cards").append(`<div class="d-flex flex-row flex-wrap justify-content-between part"></div>`)
+            i=0
+        }
+        i++
+        $("#cards .part:last-of-type").append(html)
 
     });
 
@@ -310,89 +317,52 @@ $("#extensions").on("change", function name(e) {
     //waiting for images to be fully loaded
     $('#cards img').on('load', function () {
         $("#cards").show()
-        $("#cards").addClass("d-flex")
+        // $("#cards").addClass("d-flex")
         $("#loader").hide()
     });
     card_list_count()
 
 })
 
-// for (let i = 0; i < data.length; i++) {
-//     a=data[i].split(";")
-//     // b=data[i+1].split(";")
-//     // console.log(a[0]);
-//     if (!a[0]) {
-//         // console.log("continue");
-//         // console.log(a[0]);
-//         continue
-//     }
-//     // console.log(!a[0].includes("Éclipse Cosmique"));
-//     if (!a[0].includes("Éclipse Cosmique")) {
-//         continue
-//     }
-//     console.log(a[4]!="commune");
-//     if (a[4]!="commune") {
-//         continue
-//     }
-//     if (deck.includes(a[1])) {
-//         continue
-//     }else{
-//         deck.push(a[1])
-//     }
-//     console.log(a);
-//     // console.log($(`#${a[1]}_${a[2]}_${a[3]}`).length);
-//     // console.log(i);
-//     // console.log(i%2);
-//     // if (`${a[1]}_${a[2]}_${a[3]}`==`${b[1]}_${b[2]}_${b[3]}`) {
-//     //     html=`
-//     //     <div class="card" style="width:20%;margin:2%;" id="${a[1]}_${a[2]}_${a[3]}">
-//     //         <div class="card-header">
-//     //             #${a[1]}/${a[2]} - ${a[3]}
-//     //         </div>
-//     //         <div class="card-body">
-//     //         <div class="img">
-//     //         <img src="${a[0]}" class="card-img-top" alt="...">
-//     //         <img src="${b[0]}" class="card-img-top" alt="...">
-//     //         </div>
-//     //             <h5 class="card-title"></h5>
-//     //             <p class="card-text"></p>
-//     //             <a href="#" class="btn btn-primary"></a>
-//     //         </div>
-//     //         <div class="card-footer text-muted">
-//     //         ${a[4]} - ${a[5]}
-//     //         </div>
-//     //     </div>
-//     //     `
-//     //     i++
-//     // }else{
-//         console.log("add card");
-//     // html=`
-//     // <div class="card" style="width:20%;margin:2%;" id="${a[1]}_${a[2]}_${a[3]}">
-//     //     <div class="card-header">
-//     //         #${a[1]}/${a[2]} - ${a[3]}
-//     //     </div>
-//     //     <div class="card-body">
-//     //     <div class="img">
-//     //     <img src="${a[0].split(".")[0]}.png" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#modalContent">
-//     //     </div>
-//     //         <h5 class="card-title"></h5>
-//     //         <p class="card-text"></p>
-//     //         <a href="#" class="btn btn-primary"></a>
-//     //     </div>
-//     //     <div class="card-footer text-muted">
-//     //     ${a[4]} - ${a[5]}
-//     //     </div>
-//     // </div>
-//     // `
-//     // }
-//     html=`<img class="img" src="${a[0].split(".")[0]}.png">`
-//     $("#cards").append(html)
-//     c++
-//     if (c>25) {
-//         break
-//     }
-//     console.log(a);
-// }
+function list_of_extension(){
+    text=""
+    for (const extension in extensions) {
+        text+=`
+        #Titre:Lot de ${extensions[extension].length} cartes pokémon ${extension}
+        #Description:Lot de ${extensions[extension].length} cartes pokémon officielles et françaises : ${extension}
 
+        ${card_list(extensions[extension])}
+        La description et l'état sont donnés à titre indicatifs. Vérifiez sur les photos.
+        Achat à l'unité possible et entre les différents lot sur mon dressing.
+        Merci de me communiquer l'ID de la carte ou passez par mon site.
 
-// // console.log(data);
+        Vous pouvez retrouver toutes mes cartes à vendre et leur photo individuelle ici : https://grejk.github.io/
+        Mes autres annonces cartes et rangements pokémon à vendre : #MuchacookiesPokemon
+
+        Lettre suivie ou colis selon votre préférence.
+        Envoi rapide !
+        #Prix:${extension_price(extensions[extension])}
+        --------------------------------------------------------
+        `
+     }
+     console.log(text);
+}
+
+function card_list(cards) {
+    res=""
+    // console.log(cards);
+    cards.forEach(c => {
+    res+=`${c[1]}/${c[2]} - ${c[3]} - ${c[4]} - ${c[6]} - (ID carte : ${c[8]})
+            `
+    });
+    // console.log(res);
+    return res
+}
+
+function extension_price(cards) {
+    total=0
+    cards.forEach(c => {
+        total+=parseFloat(c[7])
+    });
+    return Math.round(total * 100) / 100
+}
